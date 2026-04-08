@@ -1,32 +1,44 @@
 # Hospital_Management_System
 A Python-based Hospital Management System designed for small clinics to digitize patient records, manage doctor appointments, and automate billing processes using a lightweight, file-based database.
 
-## 📋 Table of Contents
-- [Overview](#overview)
-- [Key Features](#key-features)
-- [System Architecture](#system-architecture)
-- [Installation](#installation)
-- [Usage](#usage)
-- [Team Members](#team-members)
-- [Future Improvements](#future-improvements)
+## 📋 Overview
+[cite_start]This project digitizes core clinic workflows to replace manual, error-prone paper registers with structured digital storage[cite: 20, 165]. [cite_start]It provides a lightweight solution for outpatient clinics to manage data accurately and efficiently without the need for a complex database installation[cite: 23, 39].
 
-## 🌟 Overview
-[cite_start]This project provides a lightweight and portable digital solution for outpatient clinics that currently rely on paper registers or spreadsheets. [cite: 20, 633] [cite_start]It focuses on reducing administrative burden, improving data accuracy, and eliminating manual billing errors. [cite: 24, 637]
+## 👥 Student Team Members (Alliance University)
+* [cite_start]**Pranav Adhithya R** [cite: 10, 623]
+* [cite_start]**Tuhin V** [cite: 11, 624]
+* [cite_start]**Srujana CM** [cite: 12, 626]
+* [cite_start]**Sanjitha** [cite: 13, 625]
+* [cite_start]**Rahul G** [cite: 14, 628]
+* [cite_start]**Ayyappa** [cite: 15, 627]
 
 ## ✨ Key Features
-- [cite_start]**Patient Record Management:** Add, search, update, and delete patient information with unique UUID-based identification. [cite: 46, 47]
-- [cite_start]**Appointment Scheduling:** Book and cancel appointments with specialized doctors while maintaining a persistent booking history. [cite: 49, 50]
-- [cite_start]**Automated Billing:** Generate professional invoices including consultation fees, diagnostic services, and automated GST (5%) calculation. [cite: 51, 167]
-- [cite_start]**File-Based Persistence:** Data is stored in pipe-delimited text files (`.txt`), ensuring portability without requiring a database installation. [cite: 23, 43]
+* [cite_start]**Patient Record Management:** Register new patients, search records by name or ID, and update or delete entries[cite: 46, 632].
+* [cite_start]**Appointment Scheduling:** View available doctors and schedule or cancel appointments[cite: 49, 50, 632].
+* [cite_start]**Automated Billing:** Generate itemized invoices including consultation fees and additional diagnostic services with automated 5% GST calculation[cite: 51, 652].
+* [cite_start]**Persistent Storage:** Uses pipe-delimited (`|`) text files to ensure data is saved across sessions while remaining portable[cite: 43, 44].
 
 ## 🏗️ System Architecture
-[cite_start]The system is built using a modular design with four primary data storage files: [cite: 44]
-- `patients.txt`: Stores demographics and medical history.
-- `doctors.txt`: Maintains a roster of available doctors and their fees.
-- `appointments.txt`: Tracks all scheduled and completed visits.
-- `billing.txt`: Records all financial transactions and payment statuses.
+[cite_start]The application is structured into independent modules that interact with four primary text files[cite: 44, 45]:
+* [cite_start]`patients.txt`: Stores demographics and medical history[cite: 44].
+* [cite_start]`doctors.txt`: Maintains a roster of available doctors and their fees[cite: 44].
+* [cite_start]`appointments.txt`: Tracks all scheduled visits and their status[cite: 44].
+* [cite_start]`billing.txt`: Records all financial transactions and invoices[cite: 44].
 
-## 🚀 Installation
-1. Clone the repository:
-   ```bash
-   git clone [https://github.com/your-username/hospital-management-system.git](https://github.com/your-username/hospital-management-system.git)
+## 🚀 Getting Started
+1.  [cite_start]**Prerequisites:** Ensure you have Python 3.x installed[cite: 56].
+2.  **Run the Application:** Execute the main script via terminal:
+    ```bash
+    python hospital.py
+    ```
+3.  [cite_start]**Navigation:** Use the numerical menu options to access Patient Records, Appointments, or Billing[cite: 53, 59].
+
+## 🛠️ Resources Used
+* [cite_start]**Language:** Python 3.x[cite: 56, 186].
+* [cite_start]**Libraries:** `os`, `uuid`, `datetime` (Standard Python Library)[cite: 56, 186, 187, 188].
+* [cite_start]**IDE:** Visual Studio Code[cite: 56].
+
+## 📈 Future Improvements
+* [cite_start]Migration from flat text files to a relational database like MySQL or SQLite for concurrent access[cite: 170].
+* [cite_start]Development of a Graphical User Interface (GUI) using Tkinter[cite: 171].
+* [cite_start]Integration of automated SMS/Email appointment reminders[cite: 172].
